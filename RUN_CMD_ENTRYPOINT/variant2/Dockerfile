@@ -1,5 +1,6 @@
 FROM centos:7
-LABEL author="sivagunji"
+LABEL author="Siva Gunji"
 LABEL organization="qualitythought"
 RUN yum update -y && yum install httpd -y
-CMD ["echo", "hello-world"]
+ENTRYPOINT ["echo"]
+CMD ["hello-world"]
